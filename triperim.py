@@ -22,7 +22,7 @@ Input: v1 = [3, 6]; v2 = [1, 2]; v3 = [8, 2];       Output = 17.875
 Input: v1 = [0, -1]; v2 = [-5, 2]; v3 = [-3, -2];   Output = 13.465
 Input: v1 = [0, 0]; v2 = [1, 2]; v3 = [3, 2];       Output = 7.842
 """
-import math
+
 class Solution:
     def tri_perimeter(self,v1, v2, v3):
         # type v1: list
@@ -32,7 +32,7 @@ class Solution:
 
         # TODO: Write code below to return a double with the solution to the prompt
         def formula(x1, y1, x2, y2):
-            distance = math.sqrt((x2-x1)**2 + (y2-y2)**2)
+            distance = ((x2-x1)**2 + (y2-y2)**2)**(1/2)
             return distance
 
 
