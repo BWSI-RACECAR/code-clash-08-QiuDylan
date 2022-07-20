@@ -38,6 +38,7 @@ class Solution:
 
 
         output= formula(v1[0],v1[1],v2[0],v2[1]) + formula(v2[0],v2[1],v3[0],v3[1]) + formula(v3[0],v3[1],v1[0],v1[1])
+        output = float("{0:.3f}".format(output))
         return output
        
 
