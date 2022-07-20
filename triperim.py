@@ -34,11 +34,12 @@ class Solution:
         def formula(x1, y1, x2, y2):
             distance = float
             distance = abs(((x2-x1)**2 + (y2-y2)**2)**(1/2))
+            distance = float("{0:.3f}".format(distance))
             return distance
 
 
         output= formula(v1[0],v1[1],v2[0],v2[1]) + formula(v2[0],v2[1],v3[0],v3[1]) + formula(v3[0],v3[1],v1[0],v1[1])
-        output = float("{0:.3f}".format(output))
+        
         return output
        
 
