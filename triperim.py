@@ -32,7 +32,8 @@ class Solution:
 
         # TODO: Write code below to return a double with the solution to the prompt
         def formula(x1, y1, x2, y2):
-            distance = ((x2-x1)**2 + (y2-y2)**2)**(1/2)
+            distance = float
+            distance = abs(((x2-x1)**2 + (y2-y2)**2)**(1/2))
             return distance
 
 
